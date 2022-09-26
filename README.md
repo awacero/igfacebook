@@ -5,6 +5,8 @@ The files send_igfacebook.cfg and facebook_account.json must be configured befor
 
 GDS or the operator will decide wheter or not the information must be posted. There will be one post for the automatic (preliminar) event and another for the manual (revisado) event. If the event is older than hour_limit, there will be no publication.
 
+**View documentation:** [igFacebook Documentation](https://awacero.github.io/igfacebook/)
+
 ## Requirements
 Install the following libraries as user modules
 ``` bash
