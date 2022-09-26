@@ -5,7 +5,10 @@ import sys
 import os
 
 sys.path.append(os.path.join(os.environ['SEISCOMP_ROOT'], 'share/gds/tools/'))
-
+###
+# This import is located here due to local libraries that
+# CAN NOT be appended to PYTHONPATH due to name repetition
+###
 from lib import bulletin, spooler
 
 import facebook
@@ -55,7 +58,7 @@ class SpoolSendFacebook(spooler.Spooler):
         Load ``send_igFacebook`` config and read twitter account info,
         also create FacebookDB object
 
-        :param self SpoolSendFacebook: 
+        :param self SpoolSendFacebook:
         :returns: None
         """
 
@@ -85,7 +88,7 @@ class SpoolSendFacebook(spooler.Spooler):
 
         :param addresses: list.
         :type addresses: list[str]
-        :param content: 
+        :param content:
         :returns: True
         :returns: False
         :rtype: boolean
